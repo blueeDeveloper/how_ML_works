@@ -33,3 +33,14 @@ Example: You feed the algorithm 5 years of historical transaction data along wit
 When we say we are "training a model," we are not teaching a brain; we are optimizing a massive math formula.
 
 An untrained model starts as a giant network of nodes (neurons) connected by randomly assigned mathematical fractions called weights and biases. Because these numbers are random, the initial outputs are complete garbage. Training is the process of fixing those numbers.
+
+
+The training process follows a strict 3-step loop repeated millions of times:
+
+Forward Propagation (The Guess): The raw data is passed through the model's current weights. The model outputs a prediction (e.g., "I am 62% sure this image is a cat").
+
+Loss Function (The Reality Check): A "Loss Function" calculates exactly how wrong the model's guess was by comparing it to the true answer. It outputs a single numerical value representing the error.
+
+Backpropagation & Gradient Descent (The Fix): The algorithm calculates the directional gradient of the error. It traces backward through the network, slightly tweaking individual weights to reduce the loss value.
+
+Once the loss value reaches an acceptably low baseline, training stops. The resulting file containing those highly optimized mathematical weights is what we call The Model.
