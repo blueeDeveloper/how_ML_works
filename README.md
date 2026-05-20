@@ -27,3 +27,9 @@ Machine Learning flips this formula upside down. Instead of writing the rules, y
 | (Outputs)  |
 +------------+
 Example: You feed the algorithm 5 years of historical transaction data along with labels showing which ones were actually fraudulent. The computer finds hidden, complex mathematical correlations that a human developer would never catch in an if/else block.
+
+
+2. Understanding "Training" (The Optimization Loop)
+When we say we are "training a model," we are not teaching a brain; we are optimizing a massive math formula.
+
+An untrained model starts as a giant network of nodes (neurons) connected by randomly assigned mathematical fractions called weights and biases. Because these numbers are random, the initial outputs are complete garbage. Training is the process of fixing those numbers.
